@@ -4,12 +4,16 @@ I put together this repository as part of a classroom presentation of [Transform
 
 # Bayesian Basics
 
-# Contributions of Paper
+# Overview of Paper
+
+# Demo of Paper
+[Colab link]()
 
 # Critique
 The paper participated in an [open review process](https://openreview.net/forum?id=KSugKcbNf9).
 
 # Question 1
+
 # Question 2
 
 # Extra Resources
