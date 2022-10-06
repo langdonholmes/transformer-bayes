@@ -13,4 +13,4 @@ The paper participated in an [open review process](https://openreview.net/forum?
 # Question 2
 
 # Extra Resources
-](https://www.youtube.com/watch?v=HZGCoVF3YvM)
+1. [3Blue1Brown on Bayes](https://www.youtube.com/watch?v=HZGCoVF3YvM)
