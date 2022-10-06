@@ -1,4 +1,4 @@
-[# transformer-bayes
+# transformer-bayes
 
 I put together this repository as part of a classroom presentation of [Transformers can do Bayesian inference](https://github.com/automl/TransformersCanDoBayesianInference).
 
@@ -13,4 +13,6 @@ The paper participated in an [open review process](https://openreview.net/forum?
 # Question 2
 
 # Extra Resources
-1. [3Blue1Brown on Bayes](https://www.youtube.com/watch?v=HZGCoVF3YvM)
+1. [The official Github repository]()
+2. [Huggingface Spaces](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
+3. [3Blue1Brown on Bayes](https://www.youtube.com/watch?v=HZGCoVF3YvM)
