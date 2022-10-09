@@ -4,7 +4,12 @@ I put together this repository as part of a classroom presentation of [Transform
 
 # Bayesian Basics
 
+We want to approximate the distribution that underlies some dataset.
+
+![image](https://user-images.githubusercontent.com/55119338/194781448-6c690620-f32d-49d9-8b18-38ea3a34ca47.png)
+
 # Overview of Paper
+![image](https://user-images.githubusercontent.com/55119338/194781533-d7447e4a-e7e4-4553-b53e-e8af58512641.png)
 
 # Demo of Paper
 [Colab link]()
