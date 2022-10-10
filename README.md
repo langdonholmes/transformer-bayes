@@ -9,11 +9,17 @@ We want to approximate the distribution that underlies some dataset.
 ![image](https://user-images.githubusercontent.com/55119338/194781448-6c690620-f32d-49d9-8b18-38ea3a34ca47.png)
 
 # Overview of Paper
+The paper introduces a prior-data-fitted-network, which works as follows:
 ![image](https://user-images.githubusercontent.com/55119338/194781533-d7447e4a-e7e4-4553-b53e-e8af58512641.png)
+Using the above method, we can train a model to optimize the term on the left directly:
+![image](https://user-images.githubusercontent.com/55119338/194918521-25685272-9dbd-41f3-8ca1-c7096f474436.png)
 
 # Demo of Paper
+The authors of the paper created a simple demonstration on  Huggiingface Spaces:
 [Huggingface Spaces](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
-[Colab link]()
+
+I ported some of their demonstration code into a Colab that you can run yourself:
+[Colab link](https://colab.research.google.com/drive/1qn2hhzRfouo-F4iW7XnrB7948vOnS0tC#scrollTo=G1v6JK-j0Ium)
 
 # Critique
 The paper participated in an [open review process](https://openreview.net/forum?id=KSugKcbNf9).
