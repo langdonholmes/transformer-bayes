@@ -21,7 +21,7 @@ This is called the PPD, posterior predictive distribution, and it is difficult t
 
 Transformers typically use positional embeddings to model sequences. In this case, we want to ignore the sequence of the inputs, making them "permutation invariant." The authors accomplish this by modifying the transformer architecture:
 ![image](https://user-images.githubusercontent.com/55119338/194919717-e1dc0e02-0b1a-4fa9-b231-0549cedc6c84.png)
-
+The input points attend to each other, and the queries attend to the input points.
 
 # Demo of Paper
 The authors of the paper created a simple demonstration on Huggingface Spaces:
@@ -43,7 +43,7 @@ Things that are still not clear to me that I think the paper could address more 
  - Is it important to have accurate uncertainty estimates in your field? How important are confidence intervals in a predictive model?
 
 # Question 2
- - Weak supervision
+ - A requirement to create a prior-data-fitted network (PFN) is to generate synthetic data based on some prior. The authors show that a PFN can be created for handwriting by specifying possible line types. Can you think of some minimally informative prior for a modeling problem that you have encountered? 
 
 # Extra Resources
 1. [The official Github repository](https://github.com/automl/TransformersCanDoBayesianInference)
