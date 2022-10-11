@@ -23,7 +23,12 @@ Transformers typically use positional embeddings to model sequences. In this cas
 
 The input points attend to each other, and the queries attend to the input points.
 
-###In pseudocode:
+### In pseudocode:
+Modifications to the algorithm (4) for single-headed attention are shown. Can be easily extended to multi-head self-attention.
+
+Instead of _X_ and _Z_, which are vector representations of primary and context tokens,  
+we have _D_ (data points) and _Q_ (queries).
+
 Input:  
   | _D_, input (x, y) pairs  
   | _Q_, queries  
