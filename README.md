@@ -43,7 +43,7 @@ Things that are still not clear to me that I think the paper could address more 
  - Is it important to have accurate uncertainty estimates in your field? How important are confidence intervals in a predictive model?
 
 # Question 2
- - A requirement to create a prior-data-fitted network (PFN) is to generate synthetic data based on some prior. The authors show that a PFN can be created for handwriting by specifying possible line types. Can you think of some minimally informative prior for a modeling problem that you have encountered? 
+ - A requirement to create a prior-data-fitted network (PFN) is to generate synthetic (labelled) data. Then, you perform Bayesian inference by learning on real data. Is this just weak supervision and transfer learning?
 
 # Extra Resources
 1. [The official Github repository](https://github.com/automl/TransformersCanDoBayesianInference)
