@@ -24,6 +24,14 @@ Transformers typically use positional embeddings to model sequences. In this cas
 
 The input points attend to each other, and the queries attend to the input points.
 
+## What does a prior Dataset look like?
+The authors generate a prior dataset for a shared handwriting recognition task called Omniglot. The task looks like this:
+![image](https://user-images.githubusercontent.com/55119338/194986884-59a8053b-d258-47d3-b03e-5a958652ff33.png)
+
+The authors trained a model on synthetically generated data that looks like this:
+![image](https://user-images.githubusercontent.com/55119338/194986437-b3d0f58e-1abe-43be-b845-5385dc781a18.png)
+
+
 # Demo of Paper
 The authors of the paper created a simple demonstration on Huggingface Spaces:
 [Huggingface Spaces](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
