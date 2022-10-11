@@ -17,13 +17,16 @@ Using the above method, we can train a model to optimize the term on the left di
 
 This is called the PPD, posterior predictive distribution, and it is difficult to approximate directly using other methods such as Markov Chain Monte Carlo (MCMC).
 
-## Permutation Invariance
-Transformers typically use positional embeddings to model sequences. In this case, we want to ignore the sequence of the inputs, making them "permutation invariant." The authors accomplish this by modifying the transformer architecture:
+## Modifications to Encoder Architecture
 ![image](https://user-images.githubusercontent.com/55119338/194919717-e1dc0e02-0b1a-4fa9-b231-0549cedc6c84.png)
 
+
+### Permutation Invariance (no positional encodings)
+Transformers typically use positional embeddings to model sequences. In this case, we want to ignore the sequence of the inputs, making them "permutation invariant." 
+
+### Attention Mask:
 The input points attend to each other, and the queries attend to the input points.
 
-### In pseudocode:
 Modifications to the algorithm (4) for single-headed attention are shown. Can be easily extended to multi-head self-attention.
 
 Instead of _X_ and _Z_, which are vector representations of primary and context tokens,  
