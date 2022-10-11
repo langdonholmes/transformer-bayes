@@ -45,6 +45,9 @@ Things that are still not clear to me that I think the paper could address more 
 # Question 2
  - A requirement to create a prior-data-fitted network (PFN) is to generate synthetic (labelled) data. Then, you perform Bayesian inference by learning on real data. Is this just weak supervision and transfer learning?
 
+# Question 3
+ - If the parameters of a transformer network can serve as a prior for Bayesian inference, could a sufficiently large language model serve as a universal prior?
+
 # Extra Resources
 1. [The official Github repository](https://github.com/automl/TransformersCanDoBayesianInference)
 2. [A blog post](https://towardsdatascience.com/bayesian-inference-and-transformers-3dc473ac1af2) by Kaan Bıçakcı
