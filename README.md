@@ -21,6 +21,7 @@ This is called the PPD, posterior predictive distribution, and it is difficult t
 
 Transformers typically use positional embeddings to model sequences. In this case, we want to ignore the sequence of the inputs, making them "permutation invariant." The authors accomplish this by modifying the transformer architecture:
 ![image](https://user-images.githubusercontent.com/55119338/194919717-e1dc0e02-0b1a-4fa9-b231-0549cedc6c84.png)
+
 The input points attend to each other, and the queries attend to the input points.
 
 # Demo of Paper
