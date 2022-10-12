@@ -44,6 +44,12 @@ Then mask normally for attention.
 
 ∀𝑡<sub>d</sub>, 𝑡<sub>q</sub>, if ¬Mask[𝑡<sub>d</sub>, 𝑡<sub>q</sub>] then S[𝑡<sub>d</sub>, 𝑡<sub>q</sub>] ← -∞
 
+## Demo of Paper
+The authors of the paper created a simple demonstration on Huggingface Spaces:
+[Huggingface Spaces](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
+
+I ported some of their demonstration code into a Colab that you can run yourself:
+[Colab link](https://colab.research.google.com/drive/1qn2hhzRfouo-F4iW7XnrB7948vOnS0tC#scrollTo=G1v6JK-j0Ium)
 
 ## What does a prior Dataset look like?
 The authors generate a prior dataset for a shared handwriting recognition task called Omniglot. The task looks like this:
@@ -53,18 +59,11 @@ The authors trained a model on synthetically generated data that looks like this
 ![image](https://user-images.githubusercontent.com/55119338/194986437-b3d0f58e-1abe-43be-b845-5385dc781a18.png)
 
 
-# Demo of Paper
-The authors of the paper created a simple demonstration on Huggingface Spaces:
-[Huggingface Spaces](https://huggingface.co/spaces/samuelinferences/transformers-can-do-bayesian-inference)
-
-I ported some of their demonstration code into a Colab that you can run yourself:
-[Colab link](https://colab.research.google.com/drive/1qn2hhzRfouo-F4iW7XnrB7948vOnS0tC#scrollTo=G1v6JK-j0Ium)
-
 # Critique
 The paper participated in an [open review process](https://openreview.net/forum?id=KSugKcbNf9).
 
 Things that are still not clear to me that I think the paper could address more clearly:
- - It is not clear where this method would be most useful. What are some real world problems that might benefit from such an approach? They show that the method is more efficient than existing approaches for a diverse collection of tabular datasets (when run on a Tesla V100...), but they also reduce these datasets to binary classification problems and take other simplifying steps, so it is not clear to me how close we are to a 'market-ready' approach.
+ - What are some real world problems that might benefit from such an approach? The authors show that the method is effective for handwriting recognition. They also show that the method is more efficient than existing approaches for a diverse collection of tabular datasets (when run on a Tesla V100...), but they reduce these datasets to binary classification problems and take other simplifying steps, so it is not clear to me how close we are to a 'market-ready' approach.
  - Speaking of the Tesla V100, it seems that the PFN approach should be compared to other GPU-accelerated approaches. I suspect there are other methods that could see massive speedups if they were also GPU-optimized.
  - The authors don't provide any intuitive explanation for why the method seems to work so well. In particular, I am confused about the transformer architecture. Why is the transformer architecture useful here? They do not use positional embeddings, and I do not understand how self-attention is contributing to their setup. Would this method work with a simpler NN architecture?
  - In terms of the writeup, it isn't clear where this contribution fits in to the literature or what issues should be addressed in future work.
@@ -73,7 +72,7 @@ Things that are still not clear to me that I think the paper could address more 
  - Is it important to have accurate uncertainty estimates in your field? How important are confidence intervals in a predictive model?
 
 # Question 2
- - A requirement to create a prior-data-fitted network (PFN) is to generate synthetic (labelled) data. Then, you perform Bayesian inference by learning on real data. Is this just weak supervision and transfer learning?
+ - A requirement to create a prior-data-fitted network (PFN) is to generate synthetic (labelled) data. Then, you perform Bayesian inference on real data. Can we think of this approach as Bayesian deep learning with weak supervision?
 
 # Question 3
  - If the parameters of a transformer network can serve as a prior for Bayesian inference, could a sufficiently large language model serve as a universal prior?
