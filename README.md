@@ -38,11 +38,11 @@ Input:
 
 ℓ<sub>D</sub> ← length(_D_)  
 
-Mask[𝑡<sub>z</sub>, 𝑡<sub>x</sub>] = [[𝑡<sub>z</sub> ≤ ℓ<sub>D</sub>]]
+Mask[𝑡<sub>d</sub>, 𝑡<sub>q</sub>] = [[𝑡<sub>d</sub> ≤ ℓ<sub>D</sub>]]
 
 Then mask normally for attention.
 
-∀𝑡<sub>z</sub>, 𝑡<sub>x</sub>, if ¬Mask[𝑡<sub>z</sub>, 𝑡<sub>x</sub>] then S[𝑡<sub>z</sub>, 𝑡<sub>x</sub>] ← -∞
+∀𝑡<sub>d</sub>, 𝑡<sub>q</sub>, if ¬Mask[𝑡<sub>d</sub>, 𝑡<sub>q</sub>] then S[𝑡<sub>d</sub>, 𝑡<sub>q</sub>] ← -∞
 
 
 ## What does a prior Dataset look like?
